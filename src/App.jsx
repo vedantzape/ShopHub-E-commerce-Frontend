@@ -11,11 +11,11 @@ import OAuth2Success from "./pages/OAuth2Success"
 import Header from "./components/Header"
 import BottomNav from "./components/BottomNav"
 
-// FIX: separate component to conditionally show BottomNav
+ 
 function AppLayout() {
   const location = useLocation()
 
-  // Hide BottomNav on these routes
+ 
   const hideBottomNav = ["/account", "/auth", "/admin"]
   const shouldShowBottomNav = !hideBottomNav.includes(location.pathname)
 
